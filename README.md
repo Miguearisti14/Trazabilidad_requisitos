@@ -75,4 +75,3 @@ Reflexión sobre los modelos y técnicas de requisitos elegidos en cada proyecto
 - Interacción con el usuario → prototipo con criterios de aceptación.
 - Reglas de negocio cambiantes → tablas de decisión y gestión de cambios.
 
-**Autor:** Miguel Aristizábal Pabón — Universidad Pontificia Bolivariana, 2026.
