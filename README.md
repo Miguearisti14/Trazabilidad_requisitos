@@ -1,48 +1,82 @@
 <!-- Archivo generado automáticamente por tools/gestionar_artefactos.py. No editar a mano: edite artefactos.json y ejecute `generar`. -->
 
-# Trazabilidad de requisitos — Gestión de artefactos
+# Proyecto Simulador (`SIM`)
 
-Repositorio de artefactos de modelado de software (SRS, RFC, prototipos, modelos y código) versionados con Git. Cada artefacto tiene un **ID único** y sus metadatos se gestionan de forma automatizada desde [`artefactos.json`](artefactos.json).
+Rama `simulador` del repositorio de trazabilidad de requisitos. Artefactos: **4**. El índice general de todos los proyectos está en la rama `master`.
 
-## Convención de identificadores
+## Inventario
 
-Formato: `<PROYECTO>-<TIPO>-<NNN>` — proyecto (3 letras) · tipo de artefacto (3 letras) · consecutivo por proyecto.
+| ID | Artefacto | Tipo | Versión | Estado final | Autor/Revisor | Fecha de cierre |
+|---|---|---|---|---|---|---|
+| `SIM-DAC-001` | [Diagrama de actividad.pdf](<Diagrama de actividad.pdf>) | Diagrama de actividad | 1.0 | Se realizó solo 1 iteración | Miguel Aristizabal | 15/09/2026 |
+| `SIM-DIM-002` | [Diagrama de impacto.pdf](<Diagrama de impacto.pdf>) | Diagrama de impacto | 1.0 | Se realizó solo 1 iteración | Miguel Aristizabal | 15/09/2026 |
+| `SIM-SIS-003` | [Sistematización.pdf](<Sistematización.pdf>) | Sistematización de requisitos | 1.0 | Se realizó solo 1 iteración | Miguel Aristizabal | 31/08/2026 |
+| `SIM-MTR-004` | [Matriz de trazabilidad.xlsx](<Matriz de trazabilidad.xlsx>) | Matriz de trazabilidad de requisitos | 1.0 | Se realizó solo 1 iteración | Miguel Aristizabal | 26/09/2026 |
 
-| Proyecto | Carpeta |  | Tipo | Descripción |
-|---|---|---|---|---|
-| `DIE` | [Dietas](Dietas/) | | `PRO` | Prototipo |
-| `MUD` | [Mudanzas](Mudanzas/) | | `MOD` | Modelo UML (Enterprise Architect) |
-| `SIM` | [Simulador](Simulador/) | | `DAC` | Diagrama de actividad |
-| `TRI` | [Tripulaciones](Tripulaciones/) | | `DIM` | Diagrama de impacto |
-|  |  | | `SIS` | Sistematización de requisitos |
-|  |  | | `RFC` | RFC (Request for Change) |
-|  |  | | `PBL` | Product Backlog |
-|  |  | | `VIS` | Vision Board |
+## Fichas de artefactos
 
-## Inventario de artefactos
+### `SIM-DAC-001` · Diagrama de actividad
 
-| ID | Proyecto | Artefacto | Versión | Estado final | Autor/Revisor | Fecha de cierre | Relacionados |
-|---|---|---|---|---|---|---|---|
-| `DIE-PRO-001` | Dietas | [Github_prototipo.html](<Dietas/Github_prototipo.html>) | 1.0 | Se realizó solo 1 iteración | Miguel Aristizabal | 21/09/2026 | Sin artefactos relacionados |
-| `MUD-MOD-001` | Mudanzas | [Modelado de SW.qea](<Mudanzas/Modelado de SW.qea>) | 2.0 | Se realizaron 2 iteraciones | Miguel Aristizabal | 10/08/2026 | Incluye diagrama de casos de uso, diagrama de clases y diagrama entidad relación |
-| `SIM-DAC-001` | Simulador | [Diagrama de actividad.pdf](<Simulador/Diagrama de actividad.pdf>) | 1.0 | Se realizó solo 1 iteración | Miguel Aristizabal | 15/09/2026 | `SIM-DIM-002`, `SIM-SIS-003` |
-| `SIM-DIM-002` | Simulador | [Diagrama de impacto.pdf](<Simulador/Diagrama de impacto.pdf>) | 1.0 | Se realizó solo 1 iteración | Miguel Aristizabal | 15/09/2026 | `SIM-DAC-001`, `SIM-SIS-003` |
-| `SIM-SIS-003` | Simulador | [Sistematización.pdf](<Simulador/Sistematización.pdf>) | 1.0 | Se realizó solo 1 iteración | Miguel Aristizabal | 31/08/2026 | `SIM-DAC-001`, `SIM-DIM-002` |
-| `TRI-RFC-001` | Tripulaciones | [RFC_Actividades_Desarrolladas.pdf](<Tripulaciones/RFC_Actividades_Desarrolladas.pdf>) | 1.0 | Se realizó solo 1 iteración | Miguel Aristizabal | 15/09/2026 | `TRI-PBL-002`, `TRI-VIS-003` |
-| `TRI-PBL-002` | Tripulaciones | [Product_backlog.html](<Tripulaciones/Product_backlog.html>) | 1.0 | Se realizó solo 1 iteración | Miguel Aristizabal | 04/08/2026 | `TRI-RFC-001`, `TRI-VIS-003` |
-| `TRI-VIS-003` | Tripulaciones | [Vision-Board.docx](<Tripulaciones/Vision-Board.docx>) | 1.0 | Se realizó solo 1 iteración | Miguel Aristizabal | 26/07/2026 | `TRI-RFC-001`, `TRI-PBL-002` |
+| Campo | Valor |
+|---|---|
+| ID único | `SIM-DAC-001` |
+| Tipo | Diagrama de actividad |
+| Archivo | [Diagrama de actividad.pdf](<Diagrama de actividad.pdf>) |
+| Versión | 1.0 |
+| Estado final | Se realizó solo 1 iteración |
+| Autor o revisor | Miguel Aristizabal |
+| Fecha de cierre | 15/09/2026 |
+| Artefactos relacionados | `SIM-DIM-002` Diagrama de impacto, `SIM-SIS-003` Sistematización, `SIM-MTR-004` Matriz de trazabilidad |
+
+### `SIM-DIM-002` · Diagrama de impacto
+
+| Campo | Valor |
+|---|---|
+| ID único | `SIM-DIM-002` |
+| Tipo | Diagrama de impacto |
+| Archivo | [Diagrama de impacto.pdf](<Diagrama de impacto.pdf>) |
+| Versión | 1.0 |
+| Estado final | Se realizó solo 1 iteración |
+| Autor o revisor | Miguel Aristizabal |
+| Fecha de cierre | 15/09/2026 |
+| Artefactos relacionados | `SIM-DAC-001` Diagrama de actividad, `SIM-SIS-003` Sistematización, `SIM-MTR-004` Matriz de trazabilidad |
+
+### `SIM-SIS-003` · Sistematización
+
+| Campo | Valor |
+|---|---|
+| ID único | `SIM-SIS-003` |
+| Tipo | Sistematización de requisitos |
+| Archivo | [Sistematización.pdf](<Sistematización.pdf>) |
+| Versión | 1.0 |
+| Estado final | Se realizó solo 1 iteración |
+| Autor o revisor | Miguel Aristizabal |
+| Fecha de cierre | 31/08/2026 |
+| Artefactos relacionados | `SIM-DAC-001` Diagrama de actividad, `SIM-DIM-002` Diagrama de impacto, `SIM-MTR-004` Matriz de trazabilidad |
+
+### `SIM-MTR-004` · Matriz de trazabilidad
+
+| Campo | Valor |
+|---|---|
+| ID único | `SIM-MTR-004` |
+| Tipo | Matriz de trazabilidad de requisitos |
+| Archivo | [Matriz de trazabilidad.xlsx](<Matriz de trazabilidad.xlsx>) |
+| Versión | 1.0 |
+| Estado final | Se realizó solo 1 iteración |
+| Autor o revisor | Miguel Aristizabal |
+| Fecha de cierre | 26/09/2026 |
+| Artefactos relacionados | `SIM-SIS-003` Sistematización, `SIM-DAC-001` Diagrama de actividad, `SIM-DIM-002` Diagrama de impacto |
 
 ## Control de versiones
 
-- Cada versión cerrada de un artefacto se marca con un tag Git `<ID>/v<versión>` (p. ej. `MUD-MOD-001/v2.0`). Ver la pestaña *Tags* del repositorio.
-- Para registrar una nueva versión: reemplace el archivo, actualice `version`, `estado_final` y `fecha_cierre` en `artefactos.json`, y ejecute:
+Cada versión cerrada se marca con un tag `<ID>/v<versión>`. Para registrar una nueva versión:
 
 ```bash
+git checkout simulador
+# reemplace el archivo y actualice version, estado_final y fecha_cierre en artefactos.json
 python tools/gestionar_artefactos.py validar
 python tools/gestionar_artefactos.py generar
 git add -A && git commit -m "<ID>: versión X.Y"
 python tools/gestionar_artefactos.py etiquetar
-git push --follow-tags   # o: git push && git push --tags
+git push origin simulador --tags
 ```
-
-- Un flujo de GitHub Actions (`.github/workflows/validar-artefactos.yml`) valida el catálogo y comprueba que los README estén al día en cada *push* o *pull request*.
