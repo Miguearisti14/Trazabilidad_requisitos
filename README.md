@@ -2,47 +2,54 @@
 
 # Trazabilidad de requisitos — Gestión de artefactos
 
-Repositorio de artefactos de modelado de software (SRS, RFC, prototipos, modelos y código) versionados con Git. Cada artefacto tiene un **ID único** y sus metadatos se gestionan de forma automatizada desde [`artefactos.json`](artefactos.json).
+Repositorio de artefactos de modelado de software (SRS, RFC, prototipos, modelos y código) versionados con Git. **Cada proyecto vive en su propia rama**; esta rama (`master`) es el índice general.
+
+## Ramas por proyecto
+
+| Rama | Proyecto | Clave | Artefactos |
+|---|---|---|---|
+| [`dietas`](https://github.com/Miguearisti14/Trazabilidad_requisitos/tree/dietas) | Dietas | `DIE` | 1 |
+| [`mudanzas`](https://github.com/Miguearisti14/Trazabilidad_requisitos/tree/mudanzas) | Mudanzas | `MUD` | 1 |
+| [`simulador`](https://github.com/Miguearisti14/Trazabilidad_requisitos/tree/simulador) | Simulador | `SIM` | 4 |
+| [`tripulaciones`](https://github.com/Miguearisti14/Trazabilidad_requisitos/tree/tripulaciones) | Tripulaciones | `TRI` | 3 |
 
 ## Convención de identificadores
 
-Formato: `<PROYECTO>-<TIPO>-<NNN>` — proyecto (3 letras) · tipo de artefacto (3 letras) · consecutivo por proyecto.
+Formato `<PROYECTO>-<TIPO>-<NNN>`: clave del proyecto (3 letras), tipo de artefacto (3 letras) y consecutivo dentro del proyecto.
 
-| Proyecto | Carpeta |  | Tipo | Descripción |
-|---|---|---|---|---|
-| `DIE` | [Dietas](Dietas/) | | `PRO` | Prototipo |
-| `MUD` | [Mudanzas](Mudanzas/) | | `MOD` | Modelo UML (Enterprise Architect) |
-| `SIM` | [Simulador](Simulador/) | | `DAC` | Diagrama de actividad |
-| `TRI` | [Tripulaciones](Tripulaciones/) | | `DIM` | Diagrama de impacto |
-|  |  | | `SIS` | Sistematización de requisitos |
-|  |  | | `RFC` | RFC (Request for Change) |
-|  |  | | `PBL` | Product Backlog |
-|  |  | | `VIS` | Vision Board |
+| Tipo | Descripción |
+|---|---|
+| `PRO` | Prototipo |
+| `MOD` | Modelo UML (Enterprise Architect) |
+| `DAC` | Diagrama de actividad |
+| `DIM` | Diagrama de impacto |
+| `SIS` | Sistematización de requisitos |
+| `MTR` | Matriz de trazabilidad de requisitos |
+| `RFC` | RFC (Request for Change) |
+| `PBL` | Product Backlog |
+| `VIS` | Vision Board |
 
 ## Inventario de artefactos
 
-| ID | Proyecto | Artefacto | Versión | Estado final | Autor/Revisor | Fecha de cierre | Relacionados |
+| ID | Rama | Artefacto | Versión | Estado final | Autor/Revisor | Fecha de cierre | Relacionados |
 |---|---|---|---|---|---|---|---|
-| `DIE-PRO-001` | Dietas | [Github_prototipo.html](<Dietas/Github_prototipo.html>) | 1.0 | Se realizó solo 1 iteración | Miguel Aristizabal | 21/09/2026 | Sin artefactos relacionados |
-| `MUD-MOD-001` | Mudanzas | [Modelado de SW.qea](<Mudanzas/Modelado de SW.qea>) | 2.0 | Se realizaron 2 iteraciones | Miguel Aristizabal | 10/08/2026 | Incluye diagrama de casos de uso, diagrama de clases y diagrama entidad relación |
-| `SIM-DAC-001` | Simulador | [Diagrama de actividad.pdf](<Simulador/Diagrama de actividad.pdf>) | 1.0 | Se realizó solo 1 iteración | Miguel Aristizabal | 15/09/2026 | `SIM-DIM-002`, `SIM-SIS-003` |
-| `SIM-DIM-002` | Simulador | [Diagrama de impacto.pdf](<Simulador/Diagrama de impacto.pdf>) | 1.0 | Se realizó solo 1 iteración | Miguel Aristizabal | 15/09/2026 | `SIM-DAC-001`, `SIM-SIS-003` |
-| `SIM-SIS-003` | Simulador | [Sistematización.pdf](<Simulador/Sistematización.pdf>) | 1.0 | Se realizó solo 1 iteración | Miguel Aristizabal | 31/08/2026 | `SIM-DAC-001`, `SIM-DIM-002` |
-| `TRI-RFC-001` | Tripulaciones | [RFC_Actividades_Desarrolladas.pdf](<Tripulaciones/RFC_Actividades_Desarrolladas.pdf>) | 1.0 | Se realizó solo 1 iteración | Miguel Aristizabal | 15/09/2026 | `TRI-PBL-002`, `TRI-VIS-003` |
-| `TRI-PBL-002` | Tripulaciones | [Product_backlog.html](<Tripulaciones/Product_backlog.html>) | 1.0 | Se realizó solo 1 iteración | Miguel Aristizabal | 04/08/2026 | `TRI-RFC-001`, `TRI-VIS-003` |
-| `TRI-VIS-003` | Tripulaciones | [Vision-Board.docx](<Tripulaciones/Vision-Board.docx>) | 1.0 | Se realizó solo 1 iteración | Miguel Aristizabal | 26/07/2026 | `TRI-RFC-001`, `TRI-PBL-002` |
+| `DIE-PRO-001` | `dietas` | Github_prototipo.html | 1.0 | Se realizó solo 1 iteración | Miguel Aristizabal | 21/09/2026 | Sin artefactos relacionados |
+| `MUD-MOD-001` | `mudanzas` | Modelado de SW.qea | 2.0 | Se realizaron 2 iteraciones | Miguel Aristizabal | 10/08/2026 | Incluye diagrama de casos de uso, diagrama de clases y diagrama entidad relación |
+| `SIM-DAC-001` | `simulador` | Diagrama de actividad.pdf | 1.0 | Se realizó solo 1 iteración | Miguel Aristizabal | 15/09/2026 | `SIM-DIM-002`, `SIM-SIS-003`, `SIM-MTR-004` |
+| `SIM-DIM-002` | `simulador` | Diagrama de impacto.pdf | 1.0 | Se realizó solo 1 iteración | Miguel Aristizabal | 15/09/2026 | `SIM-DAC-001`, `SIM-SIS-003`, `SIM-MTR-004` |
+| `SIM-SIS-003` | `simulador` | Sistematización.pdf | 1.0 | Se realizó solo 1 iteración | Miguel Aristizabal | 31/08/2026 | `SIM-DAC-001`, `SIM-DIM-002`, `SIM-MTR-004` |
+| `SIM-MTR-004` | `simulador` | Matriz de trazabilidad.xlsx | 1.0 | Se realizó solo 1 iteración | Miguel Aristizabal | 26/09/2026 | `SIM-SIS-003`, `SIM-DAC-001`, `SIM-DIM-002` |
+| `TRI-RFC-001` | `tripulaciones` | RFC_Actividades_Desarrolladas.pdf | 1.0 | Se realizó solo 1 iteración | Miguel Aristizabal | 15/09/2026 | `TRI-PBL-002`, `TRI-VIS-003` |
+| `TRI-PBL-002` | `tripulaciones` | Product_backlog.html | 1.0 | Se realizó solo 1 iteración | Miguel Aristizabal | 04/08/2026 | `TRI-RFC-001`, `TRI-VIS-003` |
+| `TRI-VIS-003` | `tripulaciones` | Vision-Board.docx | 1.0 | Se realizó solo 1 iteración | Miguel Aristizabal | 26/07/2026 | `TRI-RFC-001`, `TRI-PBL-002` |
 
-## Control de versiones
-
-- Cada versión cerrada de un artefacto se marca con un tag Git `<ID>/v<versión>` (p. ej. `MUD-MOD-001/v2.0`). Ver la pestaña *Tags* del repositorio.
-- Para registrar una nueva versión: reemplace el archivo, actualice `version`, `estado_final` y `fecha_cierre` en `artefactos.json`, y ejecute:
+## Cómo trabajar
 
 ```bash
-python tools/gestionar_artefactos.py validar
-python tools/gestionar_artefactos.py generar
-git add -A && git commit -m "<ID>: versión X.Y"
-python tools/gestionar_artefactos.py etiquetar
-git push --follow-tags   # o: git push && git push --tags
+git checkout simulador        # cambiar al proyecto
+git checkout master           # volver al índice
+python tools/gestionar_artefactos.py generar   # en master: reconstruye este índice desde las ramas
 ```
 
-- Un flujo de GitHub Actions (`.github/workflows/validar-artefactos.yml`) valida el catálogo y comprueba que los README estén al día en cada *push* o *pull request*.
+- Cada versión cerrada de un artefacto se marca con un tag `<ID>/v<versión>` (p. ej. `MUD-MOD-001/v2.0`).
+- GitHub Actions valida el catálogo y que el README esté al día en cada *push*.
