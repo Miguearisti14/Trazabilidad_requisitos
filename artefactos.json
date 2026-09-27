@@ -1,110 +1,25 @@
 {
   "repositorio": "Trazabilidad_requisitos",
   "convencion_id": "<PROYECTO>-<TIPO>-<NNN>",
-  "proyectos": {
-    "DIE": "Dietas",
-    "MUD": "Mudanzas",
-    "SIM": "Simulador",
-    "TRI": "Tripulaciones"
+  "proyecto": {
+    "clave": "DIE",
+    "nombre": "Dietas",
+    "rama": "dietas"
   },
   "tipos": {
-    "PRO": "Prototipo",
-    "MOD": "Modelo UML (Enterprise Architect)",
-    "DAC": "Diagrama de actividad",
-    "DIM": "Diagrama de impacto",
-    "SIS": "Sistematización de requisitos",
-    "RFC": "RFC (Request for Change)",
-    "PBL": "Product Backlog",
-    "VIS": "Vision Board"
+    "PRO": "Prototipo"
   },
   "artefactos": [
     {
       "id": "DIE-PRO-001",
       "nombre": "Github_prototipo",
-      "archivo": "Dietas/Github_prototipo.html",
+      "archivo": "Github_prototipo.html",
       "version": "1.0",
       "estado_final": "Se realizó solo 1 iteración",
       "autor_revisor": "Miguel Aristizabal",
       "fecha_cierre": "2026-09-21",
       "relacionados": [],
       "notas": "Sin artefactos relacionados"
-    },
-    {
-      "id": "MUD-MOD-001",
-      "nombre": "Modelado de SW",
-      "archivo": "Mudanzas/Modelado de SW.qea",
-      "version": "2.0",
-      "estado_final": "Se realizaron 2 iteraciones",
-      "autor_revisor": "Miguel Aristizabal",
-      "fecha_cierre": "2026-08-10",
-      "relacionados": [],
-      "notas": "Incluye diagrama de casos de uso, diagrama de clases y diagrama entidad relación"
-    },
-    {
-      "id": "SIM-DAC-001",
-      "nombre": "Diagrama de actividad",
-      "archivo": "Simulador/Diagrama de actividad.pdf",
-      "version": "1.0",
-      "estado_final": "Se realizó solo 1 iteración",
-      "autor_revisor": "Miguel Aristizabal",
-      "fecha_cierre": "2026-09-15",
-      "relacionados": ["SIM-DIM-002", "SIM-SIS-003"],
-      "notas": ""
-    },
-    {
-      "id": "SIM-DIM-002",
-      "nombre": "Diagrama de impacto",
-      "archivo": "Simulador/Diagrama de impacto.pdf",
-      "version": "1.0",
-      "estado_final": "Se realizó solo 1 iteración",
-      "autor_revisor": "Miguel Aristizabal",
-      "fecha_cierre": "2026-09-15",
-      "relacionados": ["SIM-DAC-001", "SIM-SIS-003"],
-      "notas": ""
-    },
-    {
-      "id": "SIM-SIS-003",
-      "nombre": "Sistematización",
-      "archivo": "Simulador/Sistematización.pdf",
-      "version": "1.0",
-      "estado_final": "Se realizó solo 1 iteración",
-      "autor_revisor": "Miguel Aristizabal",
-      "fecha_cierre": "2026-08-31",
-      "relacionados": ["SIM-DAC-001", "SIM-DIM-002"],
-      "notas": ""
-    },
-    {
-      "id": "TRI-RFC-001",
-      "nombre": "RFC_Actividades_Desarrolladas",
-      "archivo": "Tripulaciones/RFC_Actividades_Desarrolladas.pdf",
-      "version": "1.0",
-      "estado_final": "Se realizó solo 1 iteración",
-      "autor_revisor": "Miguel Aristizabal",
-      "fecha_cierre": "2026-09-15",
-      "relacionados": ["TRI-PBL-002", "TRI-VIS-003"],
-      "notas": ""
-    },
-    {
-      "id": "TRI-PBL-002",
-      "nombre": "Product_backlog",
-      "archivo": "Tripulaciones/Product_backlog.html",
-      "version": "1.0",
-      "estado_final": "Se realizó solo 1 iteración",
-      "autor_revisor": "Miguel Aristizabal",
-      "fecha_cierre": "2026-08-04",
-      "relacionados": ["TRI-RFC-001", "TRI-VIS-003"],
-      "notas": ""
-    },
-    {
-      "id": "TRI-VIS-003",
-      "nombre": "Vision-Board",
-      "archivo": "Tripulaciones/Vision-Board.docx",
-      "version": "1.0",
-      "estado_final": "Se realizó solo 1 iteración",
-      "autor_revisor": "Miguel Aristizabal",
-      "fecha_cierre": "2026-07-26",
-      "relacionados": ["TRI-RFC-001", "TRI-PBL-002"],
-      "notas": ""
     }
   ]
 }
