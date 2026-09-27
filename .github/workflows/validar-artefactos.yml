@@ -1,0 +1,18 @@
+name: Validar artefactos
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  validar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Validar catálogo (IDs, archivos, relaciones)
+        run: python tools/gestionar_artefactos.py validar
+      - name: Verificar que los README estén actualizados
+        run: python tools/gestionar_artefactos.py verificar
