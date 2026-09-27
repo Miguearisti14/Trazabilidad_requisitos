@@ -12,7 +12,9 @@ Repositorio de artefactos de modelado de software (SRS, RFC, prototipos y modelo
 | [`simulador`](https://github.com/Miguearisti14/Trazabilidad_requisitos/tree/simulador) | Simulador | `SIM` | 4 |
 | [`tripulaciones`](https://github.com/Miguearisti14/Trazabilidad_requisitos/tree/tripulaciones) | Tripulaciones | `TRI` | 3 |
 
-## Convención de identificadores
+| ID | Artefacto | Tipo | Versión | Estado final | Autor o revisor | Fecha de cierre |
+|---|---|---|---|---|---|---|
+| `DIE-PRO-001` | [Github_prototipo.html](<Github_prototipo.html>) | Prototipo | 1.0 | Se realizó solo 1 iteración | Miguel Aristizabal | 21/09/2026 |
 
 Formato `<PROYECTO>-<TIPO>-<NNN>`: clave del proyecto (3 letras), tipo de artefacto (3 letras) y consecutivo dentro del proyecto.
 
