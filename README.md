@@ -1,48 +1,68 @@
 <!-- Archivo generado automáticamente por tools/gestionar_artefactos.py. No editar a mano: edite artefactos.json y ejecute `generar`. -->
 
-# Trazabilidad de requisitos — Gestión de artefactos
+# Proyecto Tripulaciones (`TRI`)
 
-Repositorio de artefactos de modelado de software (SRS, RFC, prototipos, modelos y código) versionados con Git. Cada artefacto tiene un **ID único** y sus metadatos se gestionan de forma automatizada desde [`artefactos.json`](artefactos.json).
+Rama `tripulaciones` del repositorio de trazabilidad de requisitos. Artefactos: **3**. El índice general de todos los proyectos está en la rama `master`.
 
-## Convención de identificadores
+## Inventario
 
-Formato: `<PROYECTO>-<TIPO>-<NNN>` — proyecto (3 letras) · tipo de artefacto (3 letras) · consecutivo por proyecto.
+| ID | Artefacto | Tipo | Versión | Estado final | Autor/Revisor | Fecha de cierre |
+|---|---|---|---|---|---|---|
+| `TRI-RFC-001` | [RFC_Actividades_Desarrolladas.pdf](<RFC_Actividades_Desarrolladas.pdf>) | RFC (Request for Change) | 1.0 | Se realizó solo 1 iteración | Miguel Aristizabal | 15/09/2026 |
+| `TRI-PBL-002` | [Product_backlog.html](<Product_backlog.html>) | Product Backlog | 1.0 | Se realizó solo 1 iteración | Miguel Aristizabal | 04/08/2026 |
+| `TRI-VIS-003` | [Vision-Board.docx](<Vision-Board.docx>) | Vision Board | 1.0 | Se realizó solo 1 iteración | Miguel Aristizabal | 26/07/2026 |
 
-| Proyecto | Carpeta |  | Tipo | Descripción |
-|---|---|---|---|---|
-| `DIE` | [Dietas](Dietas/) | | `PRO` | Prototipo |
-| `MUD` | [Mudanzas](Mudanzas/) | | `MOD` | Modelo UML (Enterprise Architect) |
-| `SIM` | [Simulador](Simulador/) | | `DAC` | Diagrama de actividad |
-| `TRI` | [Tripulaciones](Tripulaciones/) | | `DIM` | Diagrama de impacto |
-|  |  | | `SIS` | Sistematización de requisitos |
-|  |  | | `RFC` | RFC (Request for Change) |
-|  |  | | `PBL` | Product Backlog |
-|  |  | | `VIS` | Vision Board |
+## Fichas de artefactos
 
-## Inventario de artefactos
+### `TRI-RFC-001` · RFC_Actividades_Desarrolladas
 
-| ID | Proyecto | Artefacto | Versión | Estado final | Autor/Revisor | Fecha de cierre | Relacionados |
-|---|---|---|---|---|---|---|---|
-| `DIE-PRO-001` | Dietas | [Github_prototipo.html](<Dietas/Github_prototipo.html>) | 1.0 | Se realizó solo 1 iteración | Miguel Aristizabal | 21/09/2026 | Sin artefactos relacionados |
-| `MUD-MOD-001` | Mudanzas | [Modelado de SW.qea](<Mudanzas/Modelado de SW.qea>) | 2.0 | Se realizaron 2 iteraciones | Miguel Aristizabal | 10/08/2026 | Incluye diagrama de casos de uso, diagrama de clases y diagrama entidad relación |
-| `SIM-DAC-001` | Simulador | [Diagrama de actividad.pdf](<Simulador/Diagrama de actividad.pdf>) | 1.0 | Se realizó solo 1 iteración | Miguel Aristizabal | 15/09/2026 | `SIM-DIM-002`, `SIM-SIS-003` |
-| `SIM-DIM-002` | Simulador | [Diagrama de impacto.pdf](<Simulador/Diagrama de impacto.pdf>) | 1.0 | Se realizó solo 1 iteración | Miguel Aristizabal | 15/09/2026 | `SIM-DAC-001`, `SIM-SIS-003` |
-| `SIM-SIS-003` | Simulador | [Sistematización.pdf](<Simulador/Sistematización.pdf>) | 1.0 | Se realizó solo 1 iteración | Miguel Aristizabal | 31/08/2026 | `SIM-DAC-001`, `SIM-DIM-002` |
-| `TRI-RFC-001` | Tripulaciones | [RFC_Actividades_Desarrolladas.pdf](<Tripulaciones/RFC_Actividades_Desarrolladas.pdf>) | 1.0 | Se realizó solo 1 iteración | Miguel Aristizabal | 15/09/2026 | `TRI-PBL-002`, `TRI-VIS-003` |
-| `TRI-PBL-002` | Tripulaciones | [Product_backlog.html](<Tripulaciones/Product_backlog.html>) | 1.0 | Se realizó solo 1 iteración | Miguel Aristizabal | 04/08/2026 | `TRI-RFC-001`, `TRI-VIS-003` |
-| `TRI-VIS-003` | Tripulaciones | [Vision-Board.docx](<Tripulaciones/Vision-Board.docx>) | 1.0 | Se realizó solo 1 iteración | Miguel Aristizabal | 26/07/2026 | `TRI-RFC-001`, `TRI-PBL-002` |
+| Campo | Valor |
+|---|---|
+| ID único | `TRI-RFC-001` |
+| Tipo | RFC (Request for Change) |
+| Archivo | [RFC_Actividades_Desarrolladas.pdf](<RFC_Actividades_Desarrolladas.pdf>) |
+| Versión | 1.0 |
+| Estado final | Se realizó solo 1 iteración |
+| Autor o revisor | Miguel Aristizabal |
+| Fecha de cierre | 15/09/2026 |
+| Artefactos relacionados | `TRI-PBL-002` Product_backlog, `TRI-VIS-003` Vision-Board |
+
+### `TRI-PBL-002` · Product_backlog
+
+| Campo | Valor |
+|---|---|
+| ID único | `TRI-PBL-002` |
+| Tipo | Product Backlog |
+| Archivo | [Product_backlog.html](<Product_backlog.html>) |
+| Versión | 1.0 |
+| Estado final | Se realizó solo 1 iteración |
+| Autor o revisor | Miguel Aristizabal |
+| Fecha de cierre | 04/08/2026 |
+| Artefactos relacionados | `TRI-RFC-001` RFC_Actividades_Desarrolladas, `TRI-VIS-003` Vision-Board |
+
+### `TRI-VIS-003` · Vision-Board
+
+| Campo | Valor |
+|---|---|
+| ID único | `TRI-VIS-003` |
+| Tipo | Vision Board |
+| Archivo | [Vision-Board.docx](<Vision-Board.docx>) |
+| Versión | 1.0 |
+| Estado final | Se realizó solo 1 iteración |
+| Autor o revisor | Miguel Aristizabal |
+| Fecha de cierre | 26/07/2026 |
+| Artefactos relacionados | `TRI-RFC-001` RFC_Actividades_Desarrolladas, `TRI-PBL-002` Product_backlog |
 
 ## Control de versiones
 
-- Cada versión cerrada de un artefacto se marca con un tag Git `<ID>/v<versión>` (p. ej. `MUD-MOD-001/v2.0`). Ver la pestaña *Tags* del repositorio.
-- Para registrar una nueva versión: reemplace el archivo, actualice `version`, `estado_final` y `fecha_cierre` en `artefactos.json`, y ejecute:
+Cada versión cerrada se marca con un tag `<ID>/v<versión>`. Para registrar una nueva versión:
 
 ```bash
+git checkout tripulaciones
+# reemplace el archivo y actualice version, estado_final y fecha_cierre en artefactos.json
 python tools/gestionar_artefactos.py validar
 python tools/gestionar_artefactos.py generar
 git add -A && git commit -m "<ID>: versión X.Y"
 python tools/gestionar_artefactos.py etiquetar
-git push --follow-tags   # o: git push && git push --tags
+git push origin tripulaciones --tags
 ```
-
-- Un flujo de GitHub Actions (`.github/workflows/validar-artefactos.yml`) valida el catálogo y comprueba que los README estén al día en cada *push* o *pull request*.
