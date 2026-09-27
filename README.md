@@ -1,35 +1,31 @@
-# Trazabilidad de requisitos — Gestión de artefactos
+# Trazabilidad de requisitos
 
-Repositorio de artefactos de modelado de software (SRS, RFC, prototipos y modelos) versionados con Git.
-**Cada proyecto está en su propia rama**; esta rama (`master`) es solo el índice general.
+Repositorio de artefactos de ingeniería de requisitos (SRS, RFC, prototipos, modelos y matrices de trazabilidad) de la asignatura Ingeniería de Requisitos, versionados con Git.
 
-## Ramas por proyecto
+Cada proyecto está en su propia rama. Esta rama (`master`) solo presenta el repositorio.
 
-| Rama | Proyecto | Clave | Artefactos |
-|---|---|---|---|
-| [`dietas`](https://github.com/Miguearisti14/Trazabilidad_requisitos/tree/dietas) | Dietas | `DIE` | 1 |
-| [`mudanzas`](https://github.com/Miguearisti14/Trazabilidad_requisitos/tree/mudanzas) | Mudanzas | `MUD` | 1 |
-| [`simulador`](https://github.com/Miguearisti14/Trazabilidad_requisitos/tree/simulador) | Simulador | `SIM` | 4 |
-| [`tripulaciones`](https://github.com/Miguearisti14/Trazabilidad_requisitos/tree/tripulaciones) | Tripulaciones | `TRI` | 3 |
+## Proyectos
 
-| ID | Artefacto | Tipo | Versión | Estado final | Autor o revisor | Fecha de cierre |
-|---|---|---|---|---|---|---|
-| `DIE-PRO-001` | [Github_prototipo.html](<Github_prototipo.html>) | Prototipo | 1.0 | Se realizó solo 1 iteración | Miguel Aristizabal | 21/09/2026 |
+| Rama | Proyecto | Descripción |
+|---|---|---|
+| [`dietas`](https://github.com/Miguearisti14/Trazabilidad_requisitos/tree/dietas) | Dietas al Día | Prototipo PWA para la asignación de tratamiento nutricional |
+| [`mudanzas`](https://github.com/Miguearisti14/Trazabilidad_requisitos/tree/mudanzas) | Portal Web de Transporte de Carga | Modelado UML (casos de uso, clases y entidad relación) |
+| [`simulador`](https://github.com/Miguearisti14/Trazabilidad_requisitos/tree/simulador) | Simulador de Transmisión Mecánica | SRS, diagramas de actividad e impacto y matriz de trazabilidad |
+| [`tripulaciones`](https://github.com/Miguearisti14/Trazabilidad_requisitos/tree/tripulaciones) | Sistema Integral de Gestión de Tripulaciones | Vision Board, Product Backlog y solicitudes de cambio (RFC) |
 
-Formato `<PROYECTO>-<TIPO>-<NNN>`: clave del proyecto (3 letras), tipo de artefacto (3 letras) y consecutivo dentro del proyecto.
+El README de cada rama describe:
 
-## Inventario de versiones
+1. el contexto del proyecto;
+2. las necesidades originales;
+3. los requisitos priorizados;
+4. la validación;
+5. la cadena de trazabilidad;
+6. la gestión de cambios.
 
-| ID | Rama | Artefacto | Versión | Estado final | Autor o revisor | Fecha de cierre |
-|---|---|---|---|---|---|---|
-| `DIE-PRO-001` | `dietas` | Github_prototipo.html | 1.0 | Se realizó solo 1 iteración | Miguel Aristizabal | 21/09/2026 |
-| `MUD-MOD-001` | `mudanzas` | Modelado de SW.qea | 2.0 | Se realizaron 2 iteraciones | Miguel Aristizabal | 10/08/2026 |
-| `SIM-DAC-001` | `simulador` | Diagrama de actividad.pdf | 1.0 | Se realizó solo 1 iteración | Miguel Aristizabal | 15/09/2026 |
-| `SIM-DIM-002` | `simulador` | Diagrama de impacto.pdf | 1.0 | Se realizó solo 1 iteración | Miguel Aristizabal | 15/09/2026 |
-| `SIM-SIS-003` | `simulador` | Sistematización.pdf | 1.0 | Se realizó solo 1 iteración | Miguel Aristizabal | 31/08/2026 |
-| `SIM-MTR-004` | `simulador` | Matriz de trazabilidad.xlsx | 1.0 | Se realizó solo 1 iteración | Miguel Aristizabal | 26/09/2026 |
-| `TRI-RFC-001` | `tripulaciones` | RFC_Actividades_Desarrolladas.pdf | 1.0 | Se realizó solo 1 iteración | Miguel Aristizabal | 15/09/2026 |
-| `TRI-PBL-002` | `tripulaciones` | Product_backlog.html | 1.0 | Se realizó solo 1 iteración | Miguel Aristizabal | 04/08/2026 |
-| `TRI-VIS-003` | `tripulaciones` | Vision-Board.docx | 1.0 | Se realizó solo 1 iteración | Miguel Aristizabal | 26/07/2026 |
+También incluye las versiones actuales de sus artefactos.
 
-> Las ramas de proyecto son independientes y **no se fusionan** con `master`.
+## Identificadores de artefactos
+
+Cada artefacto tiene un ID único con el formato `<PROYECTO>-<TIPO>-<NNN>`: clave del proyecto (`DIE`, `MUD`, `SIM`, `TRI`), tipo de artefacto y consecutivo dentro del proyecto. Por ejemplo, `SIM-SIS-003` es la Sistematización del Simulador.
+
+**Autor:** Miguel Aristizábal Pabón — Universidad Pontificia Bolivariana, 2026.
