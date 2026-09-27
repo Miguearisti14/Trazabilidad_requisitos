@@ -32,26 +32,6 @@ Formato: `<PROYECTO>-<TIPO>-<NNN>` — proyecto (3 letras) · tipo de artefacto 
 | `TRI-PBL-002` | Tripulaciones | [Product_backlog.html](<Tripulaciones/Product_backlog.html>) | 1.0 | Se realizó solo 1 iteración | Miguel Aristizabal | 04/08/2026 | `TRI-RFC-001`, `TRI-VIS-003` |
 | `TRI-VIS-003` | Tripulaciones | [Vision-Board.docx](<Tripulaciones/Vision-Board.docx>) | 1.0 | Se realizó solo 1 iteración | Miguel Aristizabal | 26/07/2026 | `TRI-RFC-001`, `TRI-PBL-002` |
 
-## Matriz de trazabilidad
-
-Relaciones entre artefactos del mismo proyecto (● = relacionado).
-
-**Simulador**
-
-| | `SIM-DAC-001` | `SIM-DIM-002` | `SIM-SIS-003` |
-|---|---|---|---|
-| `SIM-DAC-001` | — | ● | ● |
-| `SIM-DIM-002` | ● | — | ● |
-| `SIM-SIS-003` | ● | ● | — |
-
-**Tripulaciones**
-
-| | `TRI-RFC-001` | `TRI-PBL-002` | `TRI-VIS-003` |
-|---|---|---|---|
-| `TRI-RFC-001` | — | ● | ● |
-| `TRI-PBL-002` | ● | — | ● |
-| `TRI-VIS-003` | ● | ● | — |
-
 ## Control de versiones
 
 - Cada versión cerrada de un artefacto se marca con un tag Git `<ID>/v<versión>` (p. ej. `MUD-MOD-001/v2.0`). Ver la pestaña *Tags* del repositorio.

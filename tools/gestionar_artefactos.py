@@ -131,18 +131,7 @@ def readme_raiz(cat, por_id):
         rel = ", ".join(f"`{r}`" for r in a["relacionados"]) or (a["notas"] or "—")
         out.append(f"| `{a['id']}` | {proy} | {enlace(a, False)} | {a['version']} | {a['estado_final']} | "
                    f"{a['autor_revisor']} | {fecha_dmy(a['fecha_cierre'])} | {rel} |")
-    out += ["", "## Matriz de trazabilidad", "",
-            "Relaciones entre artefactos del mismo proyecto (● = relacionado).", ""]
-    for clave, carpeta in cat["proyectos"].items():
-        grupo = [a for a in arts if a["id"].startswith(clave + "-")]
-        if not any(a["relacionados"] for a in grupo):
-            continue
-        out += [f"**{carpeta}**", "", "| | " + " | ".join(f"`{a['id']}`" for a in grupo) + " |",
-                "|---|" + "---|" * len(grupo)]
-        for a in grupo:
-            celdas = ["—" if b is a else ("●" if b["id"] in a["relacionados"] else "") for b in grupo]
-            out.append(f"| `{a['id']}` | " + " | ".join(celdas) + " |")
-        out.append("")
+    out.append("")
     out += ["## Control de versiones", "",
             "- Cada versión cerrada de un artefacto se marca con un tag Git `<ID>/v<versión>` "
             "(p. ej. `MUD-MOD-001/v2.0`). Ver la pestaña *Tags* del repositorio.",
